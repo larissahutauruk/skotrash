@@ -1,10 +1,11 @@
 <?php
-$host     = "localhost";
-$user     = "root";         // Ganti kalau username DB kamu bukan root
-$password = "";             // Isi kalau ada password MySQL kamu
-$database = "skotrash";     // Nama database kamu
+$host     = "b6kiqtean5gdsqwwuyvd-mysql.services.clever-cloud.com";
+$user     = "un0bgzneqdv8p3aq";         // Ganti kalau username DB kamu bukan root
+$password = "un0bgzneqdv8p3aq";             // Isi kalau ada password MySQL kamu
+$database = "b6kiqtean5gdsqwwuyvd";     // Nama database kamu
+$port = "3306";
 
-$conn = mysqli_connect($host, $user, $password, $database);
+$conn = mysqli_connect($host, $user, $password, $database, $port);
 
 // Cek koneksi
 if (!$conn) {
